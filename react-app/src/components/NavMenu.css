@@ -1,0 +1,23 @@
+﻿a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+html {
+  font-size: 12px;
+}
+@media (min-width: 1028px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+ .mainContainer {
+       margin-right: 20px !important;
+       margin-left: 20px !important;
+       max-width: 95% !important;
+ }
