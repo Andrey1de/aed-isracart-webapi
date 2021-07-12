@@ -2,6 +2,10 @@
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
+    "iis": {
+      "applicationUrl": "http://localhost/aed-isracart-webapi",
+      "sslPort": 0
+    },
     "iisExpress": {
       "applicationUrl": "http://localhost:33333",
       "sslPort": 0
@@ -34,8 +38,7 @@
       "distributionName": ""
     },
     "exe": {
-      "commandName": "Executable",
-      "executablePath": "C:\\_Exames\\aed-isracart-webapi\\bin\\Debug\\net5.0\\aed-isracart-webapi.exe"
+      "commandName": "Project"
     }
   }
 }

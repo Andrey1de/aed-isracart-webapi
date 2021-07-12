@@ -50,12 +50,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\index.html">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Services\" />
   </ItemGroup>

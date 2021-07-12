@@ -3,9 +3,9 @@ import { jsonPOST$, jsonDELETE$, jsonGET$ } from './JsonHttpService'
 import { CalcDto} from '../models/CalcDto';
 import { Subject } from 'rxjs';
 
-///TO USER SERVER - MOK have been set to  0
+///TO USER SERVER - MOK have been set to  0   https://aed-isracart-webapi.herokuapp.com;
 export const MOK = 0;
-export const BASE_URL_0 = 'https://aed-isracart-webapi.herokuapp.com';
+export const BASE_URL_0 = 'http://localhost:5000'; 
 export const BASE_URL_API = BASE_URL_0 + '/api/calc';
 export const SWAGGER_URL = BASE_URL_0 + '/swagger/index.html';//'http://localhost:33333/api/calc';
 
