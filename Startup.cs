@@ -1,3 +1,4 @@
+using AedIsracartWebApi.Operations;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -29,25 +30,9 @@ namespace AedIsracartWebApi
             }));
             
             services.AddHttpClient();
-            //services.AddSingleton<IRabbitMqServer, RabbitMqServer>();
-            //services.AddDbContext<CommonDBContext>(options =>
-            //{
-
-
-            //    services.AddDbContext<CommonDBContext>(options =>
-            //    {
-            //        /// opt.UseInMemoryDatabase(databaseName: "database_name");
-            //    });
-
-            //}, ServiceLifetime.Transient);
-
-            ////services.AddScoped<IHttpSpooler, HttpSpooler>();
-            //services.AddScoped<IRatesService, RatesService>();
-            //services.AddScoped<IGlobalQuotesService, GlobalQuotesService>();
-            //services.AddScoped<ICompanyOverviewService, CompanyOverviewService>();
-            //services.AddScoped<ICompanyBestMatchesService, CompanyBestMatchesService>();
-            
-
+     
+            services.AddScoped<IOperationService, OperationService>();
+     
             services.AddControllers().AddJsonOptions(option =>
             option.JsonSerializerOptions.PropertyNamingPolicy
                 = JsonNamingPolicy.CamelCase
@@ -57,7 +42,7 @@ namespace AedIsracartWebApi
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "Isracart",
+                    Title = "For Isracart",
                     Description = "WebApi NetCore 5",
                     TermsOfService = new Uri("https://example.com/terms"),
                     Contact = new OpenApiContact
