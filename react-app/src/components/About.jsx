@@ -24,7 +24,7 @@ export class About extends Component {
       <div  className="tableFrame">
         <div>
         <h2>
-          <p>Welcome to Andrey Dergachev first React/NetCore 5 SPA @2021 ver:1.9.0</p>
+          <p>Welcome to Andrey Dergachev first React/NetCore 5 SPA @2021 ver:2.0.1</p>
         </h2>
   
 

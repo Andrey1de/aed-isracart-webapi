@@ -35,7 +35,7 @@ export class NavMenu extends Component {
         <Navbar  color="red" className="navbar-expand-sm 
             navbar-toggleable-sm ng-light bg-blue border-bottom box-shadow " >
           <Container>
-            <NavbarBrand tag={Link}  to="/">aed_isracart_ahuva</NavbarBrand>
+            <NavbarBrand tag={Link}  to="/">aed_isracart_webapi</NavbarBrand>
             <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
             <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!this.state.collapsed} navbar>
               <ul className="navbar-nav flex-grow">
